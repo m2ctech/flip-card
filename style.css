@@ -14,7 +14,19 @@ body {
     min-height: 100vh;
     background-color: #1f2937;
 }
-
+@media only screen and (max-width: 800px){
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    #btn {
+        margin-left: 8rem;
+        margin-bottom: 1rem;
+    }
+    header > h1{
+        font-size: 0.8rem;
+    }
+}
 header h1 {
     color: white;
     padding: 0.8rem;
@@ -54,14 +66,17 @@ ul {
     width: 400px;
     padding: 25px;
     background-color: #f8f8f8;
+    border: 2px solid rgb(244, 160, 2);
     border-radius: 10px;
 }
+
 .cards .card .view {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .cards {
+    
     width: 100%;
     height: 100%;
     display: flex;
@@ -198,4 +213,25 @@ ul {
 
 #my-canvas.active{
     visibility: visible;
+}
+
+.play {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 6vh;
+    background-color: rgb(244, 160, 2);
+    border: 2px solid rgb(244, 160, 5);
+    border-radius: 0 0 3rem 3rem;
+}
+
+
+.play h1{
+    text-align: center;
+    text-shadow: 0 10px 20px rgba(0,0,0,0.5);
+   
+
+    
 }
